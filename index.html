@@ -13,18 +13,32 @@
 
 <body onload="welcomeAlert();">
     <div id="game">
-        <h1 class="heading">
-            <img class="logo" src="" alt="logo">
-        </h1>
+        <h1 class="heading"><img class="logo" src="" alt="logo"></h1>
+
+<table>
+    <tbody><tr>
+        <th> Your Selection:</th>
+        <th></th>
+        <th>Computers choise:</th>
+        </tr>
+        <tr>
+        <td>
+            <form>
+<input type="radio" id="rock" name="choise" value="Rock"> Rock
+<input type="radio" id="Paper" name="choice" value="Paper"> Paper
+<input type="radio" id="Scissors" name="choice" value="Scissors"> Scissors
+
+            </form>
+        </td>
+    </tbody>
+</table>
         <h1 class="gameText" id="playerText">Player: </h1>
         <h1 class="gameText" id="computerText">Computer: </h1>
         <h1 class="gameText" id="resultText">Result: </h1>
 
 <!-- lägga till bilder i sten/sax/påse-->
 
-        <button class="choiseBttn"><i class="fa-light fa-hand-fist">Rock</i></button>
-        <button class="choiseBttn"><i class="fa-light fa-hand">Paper</i></button>
-        <button class="choiseBttn"><i class="fa-light fa-hand-scissors"></i>Scissors</button>
+
     </div>
 
     <script src="/assets/js/script.js"></script>
