@@ -31,28 +31,68 @@
 
                         </form>
                     </td>
+                    <td><button onclick="submitAnswer()">Submit Answer</button></td>
+                    <td class="computer-choice"></td>
+                </tr>
+                <tr>
+                    <td>You Selected:</td>
+                    <td id="player-choice"></td>
+                </tr>
+                <tr>
+                    <td>Computer Randomly Generated:</td>
+                    <td class="computer-choice"></td>
+                </tr>
+                <tr>
+                    <td>
+                        Scoreboard:
+                    </td>
+                    <td>
+                        <p>Player: <span id="player-score">0</span></p>
+                        <p>Computer: <span id="computer-score">0</span></p>
+                    </td>
+
+                    <td id="message"></td>
+                </tr>
+            </tbody></table>
+
+            <table>
+                <tbody><tr>
+                    <th>Total Games Played</th>
+                    <th>Rock Used</th>
+                    <th>Paper Used</th>
+                    <th>Scissors Used</th>
+                  </tr>
+                  <tr>
+                    <td id="total">0</td>
+                    <td id="rock-used">0</td>
+                    <td id="paper-used">0</td>
+                    <td id="scissors-used">0</td>
+                  </tr>
+            </table>
+
+        <table>
+            <tbody>
+                <tr>
+                    <th>Total Games Played:</th>
+                    <th>Rock Used:</th>
+                    <th>Paper Used:</th>
+                    <th>Scissors Used:</th>
+                </tr>
+                <tr>
+                    <td id="total">0</td>
+                    <td id="total-rock">0</td>
+                    <td id="total-paper">0</td>
+                    <td id="total-scissors">0</td>
+                </tr>
             </tbody>
         </table>
+        <!-- lägga till bilder i sten/sax/påse-->
+
+             <!--
         <h1 class="gameText" id="playerText">Player: </h1>
         <h1 class="gameText" id="computerText">Computer: </h1>
         <h1 class="gameText" id="resultText">Result: </h1>
-
-        <table>
-            <tbody><tr>
-              <th>Total Games Played:</th>
-              <th>Rock Used:</th>
-              <th>Paper Used:</th>
-              <th>Scissors Used:</th>
-            </tr>
-            <tr>
-              <td id="total">0</td>
-              <td id="total-rock">0</td>
-              <td id="total-paper">0</td>
-              <td id="total-scissors">0</td>
-            </tr>
-          </tbody></table>
-        <!-- lägga till bilder i sten/sax/påse-->
-
+-->
 
     </div>
 
