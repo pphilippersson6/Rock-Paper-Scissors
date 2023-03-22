@@ -1,11 +1,14 @@
 const choises = ["Rock", "Paper", "Scissors"];
-const message = document.getElementById("message");
+const message = document.getElementById("statistics");
+let totalPlayed = 0, rock = 0, paper = 0, scissors = 0;
 
+
+// welcome message/alert  //
 function welcomeAlert () {
     let person = prompt ("Please enter your name:");
     if (person != null) {
-        document.getElementById("demo").innerHTML =
-          "Hello " + person + "! It's time to play!";
+        document.getElementById("headingName").innerHTML =
+          "Hello " + person + ". Choose wisely!";
       }
 }
 
@@ -14,6 +17,8 @@ function welcomeAlert () {
 // game //
 
 function checkWinner(compChoice, playerChoice) {
+
+  
 
     let result;
     if (compChoice === playerChoice) {
