@@ -1,4 +1,4 @@
-const choises = ["Rock", "Paper", "Scissors"];
+const choices = ["Rock", "Paper", "Scissors"];
 const message = document.getElementById("statistics");
 let totalPlayed = 0, rock = 0, paper = 0, scissors = 0;
 
@@ -73,4 +73,36 @@ function checkWinner(compChoice, playerChoice) {
     return result;
   }
 
+  function updateScores(result) {
+    const playerScore = document.getElementById("player-score");
+    const computerScore = document.getElementById("computer-score");
+    const total = document.getElementById("total");
+    const rockUsed = document.getElementById("rock-used");
+    const paperUsed = document.getElementById("paper-used");
+    const scissorsUsed = document.getElementById("scissors-used");
   
+    let newScore;
+    totalPlayed++;
+  
+    total.textContent = totalPlayed;
+    rockUsed.textContent = rock;
+    paperUsed.textContent = paper;
+    scissorsUsed.textContent = scissors;
+  
+    if (result == "draw") {
+      message.textContent = "It is a draw!";
+    }
+  
+    if (result === "computer") {
+      newScore = parseInt(computerScore.textContent) + 1;
+      computerScore.textContent = newScore;
+      message.textContent = "Computer won!";
+    }
+  
+    if (result === "player") {
+      newScore = parseInt(playerScore.textContent) + 1;
+      playerScore.textContent = newScore;
+      message.textContent = "You won!";
+    }
+  
+  }
