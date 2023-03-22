@@ -13,8 +13,46 @@ function welcomeAlert () {
 }
 
 
-
 // game //
+
+function submitAnswer() {
+
+
+  const choice = document.querySelector("input[name='choice']:checked");
+
+  if (choice) {
+    let playerChoice = choice.value;
+    let computerChoice = Math.floor(Math.random() * choices.length);
+
+    document.getElementById("player-choice").textContent = playerChoice;
+
+    document.querySelectorAll(".computer-choice").forEach(element => {
+      element.textContent = choices[computerChoice];
+    });
+
+    switch (playerChoice) {
+      case "Rock":
+        rock++;
+        break;
+      case "Paper":
+        paper++;
+        break;
+      case "Scissors":
+        scissors++;
+        break;
+      default:
+        break;
+    }
+
+    let result = checkWinner(choices[computerChoice], playerChoice);
+
+    updateScores(result);
+
+  }
+
+}
+
+// game-result //
 
 function checkWinner(compChoice, playerChoice) {
 
@@ -34,3 +72,5 @@ function checkWinner(compChoice, playerChoice) {
   
     return result;
   }
+
+  
