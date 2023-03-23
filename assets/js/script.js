@@ -8,7 +8,7 @@ function welcomeAlert () {
     let person = prompt ("Please enter your name:");
     if (person != null) {
         document.getElementById("headingName").innerHTML =
-          "Hello " + person + ". Choose wisely!";
+          "Please " + person + ", choose wisely!";
       }
 }
 
