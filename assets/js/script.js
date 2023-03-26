@@ -78,17 +78,12 @@ function updateScores(result) {
   const total = document.getElementById("total");
   console.log(result)
   
-  // const rockUsed = document.getElementById("rock-used");
-  // const paperUsed = document.getElementById("paper-used");
-  // const scissorsUsed = document.getElementById("scissors-used");
 
   let newScore;
   totalPlayed++;
 
   total.textContent = totalPlayed;
-  // rockUsed.textContent = rock;
-  // paperUsed.textContent = paper;
-  // scissorsUsed.textContent = scissors;
+
 
   if (result === "draw") {
     message.textContent = "It is a draw!";
