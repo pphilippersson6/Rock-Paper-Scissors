@@ -36,3 +36,13 @@ You can create a copy of the repository aswell, by use something called forking.
 2. Press **Fork** on the top right side of the page. ![Fork](BILD!!!)
 3. Press the green button to make the copy to your own github. ![Fork-button](BILD!)
 4. Now you have created a copy to your own github site. This is a good thing if you are going to work with a project, and you are more than one person. It is hard to work in same file at a time.
+
+# Testing
+
+## Validator Testing 
+
+# Credits
+### Content
+*
+*
+*
