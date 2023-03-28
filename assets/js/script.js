@@ -76,6 +76,7 @@ function checkWinner(compChoice, playerChoice) {
 function updateScores(result) {
   const playerScore = document.getElementById("player-score");
   const computerScore = document.getElementById("computer-score");
+  const drawScore = document.getElementById("draw-score")
   const total = document.getElementById("total");
   console.log(result)
   
@@ -87,22 +88,21 @@ function updateScores(result) {
 
 
   if (result === "draw") {
+    newScore = parseInt(drawScore.textContent) + 1;
+    drawScore.textContent = newScore;
     message.textContent = "It is a draw!";
-    console.log("draw")
   }
 
   if (result === "computer") {
     newScore = parseInt(computerScore.textContent) + 1;
     computerScore.textContent = newScore;
     message.textContent = "Computer won!";
-    console.log("computer won")
   }
 
   if (result === "player") {
     newScore = parseInt(playerScore.textContent) + 1;
     playerScore.textContent = newScore;
     message.textContent = "You won!";
-    console.log("player")
   }
 
 }
