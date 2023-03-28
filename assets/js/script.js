@@ -12,7 +12,7 @@ function welcomeAlert() {
   let person = prompt("Please enter your name:");
   if (person != null) {
     document.getElementById("headingName").innerHTML =
-      "Please " + person + ", choose wisely!";
+      "Let the game begin " + person + ", choose wisely!";
   }
 }
 
@@ -68,6 +68,7 @@ function checkWinner(compChoice, playerChoice) {
   } else {
     result = "player";
   }
+ 
 
   return result;
 }
