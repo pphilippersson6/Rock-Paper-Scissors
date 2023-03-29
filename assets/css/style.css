@@ -108,13 +108,16 @@ font-size: 25px;
 
 
 .you-win {
-  color: green;
+  color: rgb(0, 0, 0);
   background-color: lightgreen;
 }
 
 .you-lose {
-  color: red;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
   background-color: lightcoral;
+ 
+
 }
 
 /*
