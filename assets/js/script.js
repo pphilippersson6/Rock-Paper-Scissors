@@ -48,7 +48,7 @@ function submitAnswer() {
         break;
     }
 
-    let winner = checkWinner(computerChoice, playerChoice); 
+    let winner = checkWinner(computerChoice, playerChoice);
     updateScores(winner)
   }
 }
@@ -59,8 +59,7 @@ function checkWinner(compChoice, playerChoice) {
   let result;
   if (compChoice === playerChoice) {
     result = "draw";
-  } 
-  else if (compChoice == "Rock" && playerChoice == "Scissors" ||
+  } else if (compChoice == "Rock" && playerChoice == "Scissors" ||
     compChoice == "Scissors" && playerChoice == "Paper" ||
     compChoice == "Paper" && playerChoice == "Rock") {
 
@@ -68,7 +67,7 @@ function checkWinner(compChoice, playerChoice) {
   } else {
     result = "player";
   }
- 
+
 
   return result;
 }
@@ -78,8 +77,8 @@ function updateScores(result) {
   const computerScore = document.getElementById("computer-score");
   const drawScore = document.getElementById("draw-score")
   const total = document.getElementById("total");
-  console.log(result)
   
+
 
   let newScore;
   totalPlayed++;
@@ -90,19 +89,25 @@ function updateScores(result) {
   if (result === "draw") {
     newScore = parseInt(drawScore.textContent) + 1;
     drawScore.textContent = newScore;
-    message.textContent = "It is a draw!";
+    message.textContent = "It is a tie!";
+    message.classList.remove("you-win","you-lose");
   }
 
   if (result === "computer") {
     newScore = parseInt(computerScore.textContent) + 1;
     computerScore.textContent = newScore;
-    message.textContent = "Computer won!";
+    message.textContent = "Computer wins!";
+    message.classList.add("you-lose");
+    message.classList.remove("you-win");
+    
   }
 
   if (result === "player") {
     newScore = parseInt(playerScore.textContent) + 1;
     playerScore.textContent = newScore;
-    message.textContent = "You won!";
+    message.textContent = "You win!";
+    message.classList.add("you-win");
+    message.classList.remove("you-lose");
   }
 
 }

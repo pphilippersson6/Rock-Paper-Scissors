@@ -105,3 +105,21 @@ font-size: 25px;
   font-size: 25px;
   font-weight: bold;
 }
+
+
+.you-win {
+  color: green;
+  background-color: lightgreen;
+}
+
+.you-lose {
+  color: red;
+  background-color: lightcoral;
+}
+
+/*
+.tie-message {
+  color: yellow;
+  background-color: lightyellow;
+}
+*/
