@@ -25,22 +25,24 @@
 
 
 
-        <div class="move" class="options">
+        <div class="moves" class="options">
             <h3>Choose your move </h3>
 
 
 
             <!--Options available to player to play game -->
             <span class="gameOption"> <input type="radio" id="rock" name="choice" value="Rock"> Rock </span>
-            <span class="gameOption"> <input type="radio" id="Paper" name="choice" value="Paper"> Paper </span>
-            <span class="gameOption"> <input type="radio" id="Scissors" name="choice" value="Scissors"> Scissors </span>
+            <span class="gameOption"> <input type="radio" id="paper" name="choice" value="Paper"> Paper </span>
+            <span class="gameOption"> <input type="radio" id="scissors" name="choice" value="Scissors"> Scissors </span>
             <span class="gameButton"> <button id="btnSubmit">Submit Answer</button> </span>
 
         </div>
 
+        <!--
 
-LÄGGA TILL EN GRÖN bakgrund/text eller liknande, när jag vinner
-och en röd när jag förlorar. gul när det är lika?
+        LÄGGA TILL EN GRÖN bakgrund/text eller liknande, när jag vinner
+        och en röd när jag förlorar. gul när det är lika?
+        -->
 
 
         <p class="player-selection"> <span>You Selected: <span id="player-choice"></span> </p>
@@ -49,23 +51,45 @@ och en röd när jag förlorar. gul när det är lika?
         <p class="computer-selection"> Computer Selected: <span class="computer-choice"></span></p>
 
 
-        <h4 id="statistics"></h4>
+        <h4 id="whoWins">aaaaa</h4>
 
-        <div>
-            <span>Scoreboard:</span>
 
-            <p>Player: <span id="player-score">0</span></p>
-            <p>Computer: <span id="computer-score">0</span></p>
-            <p>Draw: <span id="draw-score">0</span></p>
+        <div id="wrapper">
+            <h4>Scoreboard</h4>
+            <div class="container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Your wins</th>
+                            <th>Ties</th>
+                            <th>Computer wins</th>
+                            
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> <span id="player-score">0</span></td>
+                            <td><span id="draw-score">0</span></td>
+                            <td><span id="computer-score">0</span></td>
+                    </tbody>
+                </table>
+            </div>
 
-        </div>
+            <div class="score-board">
+                <div> Scoreboard:</div>
 
-        <div>
-            <span>Total Games Played:</span>
-            <p id="total">0</p>
+                
+                <p>Computer: </p>
+                <p>Draw: </p>
 
-            <script src="/assets/js/script.js"></script>
-        </div>
+            </div>
+
+            <div>
+                <span>Total Games Played:</span>
+                <p id="total">0</p>
+            </div>
+
+                <script src="/assets/js/script.js"></script>
+           
 </body>
 
 </html>

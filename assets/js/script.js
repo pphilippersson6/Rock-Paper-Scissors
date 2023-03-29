@@ -1,5 +1,5 @@
 const choices = ["Rock", "Paper", "Scissors"];
-const message = document.getElementById("statistics");
+const message = document.getElementById("whoWins");
 let totalPlayed = 0;
 let rock = 0;
 let paper = 0;
