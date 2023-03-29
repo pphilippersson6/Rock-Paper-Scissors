@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://kit.fontawesome.com/62c908db5c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
     <title>Rock Paper Scissors!</title>
 </head>
 
@@ -26,9 +27,6 @@
 
 
         <div class="moves" class="options">
-            <h3>Choose your move </h3>
-
-
 
             <!--Options available to player to play game -->
             <span class="gameOption"> <input type="radio" id="rock" name="choice" value="Rock"> Rock </span>
@@ -51,11 +49,11 @@
         <p class="computer-selection"> Computer Selected: <span class="computer-choice"></span></p>
 
 
-        <h4 id="whoWins">aaaaa</h4>
+        <h4 id="whoWins">Who's going to win?</h4>
 
 
         <div id="wrapper">
-            <h4>Scoreboard</h4>
+            <h4>Scoreboard:</h4>
             <div class="container">
                 <table>
                     <thead>
@@ -63,7 +61,7 @@
                             <th>Your wins</th>
                             <th>Ties</th>
                             <th>Computer wins</th>
-                            
+
                     </thead>
                     <tbody>
                         <tr>
@@ -75,11 +73,6 @@
             </div>
 
             <div class="score-board">
-                <div> Scoreboard:</div>
-
-                
-                <p>Computer: </p>
-                <p>Draw: </p>
 
             </div>
 
@@ -88,8 +81,8 @@
                 <p id="total">0</p>
             </div>
 
-                <script src="/assets/js/script.js"></script>
-           
+            <script src="/assets/js/script.js"></script>
+
 </body>
 
 </html>
