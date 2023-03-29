@@ -9,7 +9,7 @@ let scissors = 0;
 
 // welcome message/alert  //
 function welcomeAlert() {
-  let person = prompt("Please enter your name:");
+  let person = prompt("Welcome to Rock, Paper, Scissors. What's your name?");
   if (person != null) {
     document.getElementById("headingName").innerHTML =
       "Welcome " + person + ", choose your move!";
