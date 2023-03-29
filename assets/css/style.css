@@ -3,25 +3,39 @@ body {
   font-family: Arial, sans-serif;
   text-align: center;
   background-color: #919191ce;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 #game {
-  max-width: 500px;
+  max-width: 650px;
   margin: 0 auto;
   background-color: #fff;
   border: 1px solid #ddd;
   padding: 20px;
 }
 
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo, .heading {
+  display: inline-block;
+  vertical-align: middle;
+
+}
+
 .logo {
-  max-width: 200px;
-  margin-bottom: 20px;
+  width: 260px;
+  height: 130px;
+  margin-bottom: 0px;
 }
 
 .heading {
   font-family: 'Amatic SC', cursive;
-  font-size: 45px;
+  font-size: 65px;
   margin-bottom: 10px;
   color: #333;
 }
