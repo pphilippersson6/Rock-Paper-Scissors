@@ -2,7 +2,8 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  background-color: #f7f7f7;
+  background-color: #919191ce;
+  margin-top: 50px;
 }
 
 #game {
@@ -81,8 +82,12 @@ th {
   margin: 0;
 }
 
+#total-stats {
+font-size: 25px;
+
+}
 #total {
   margin-top: 10px;
-  font-size: 24px;
+  font-size: 25px;
   font-weight: bold;
 }
