@@ -75,22 +75,33 @@ But when you enter your name (Philip) in the box - the message will change from 
 
 ### Rock, Paper or Scissors options
 - Here are three inputs, to make your move against the computer. You select the desired move, and then you use the **Submit Answer** button.
-This will "lock" in your answer, and generate a answer for the computer aswell. [Rock Paper Scissors](BILD PÅ INPUTSE OCH KNAPP)
+This will "lock" in your answer, and generate a answer for the computer aswell. 
+
+![Rock Paper Scissors](readme-assets/rockpaperscissor-button.png)
 
 ### Selections
 - The game will show you what input you chose, and also what the computer selected.
 - The computers choice are randomized, and will create a random option between rock, paper or scissors every time you press the **Submit Answer** button!
-[My and computer selection](bild på you och computer selected)
+
+![My and computer selection](readme-assets/options-computer-user.png)
 
 ### Result
 - The result are shown below. 
-- If you win, a text will display with "You win!", and a green background will be highlighted. [You win!](i win pic)
-- If you lose, a text will display with "Computer wins!", and a red background will be highlighted. [You lose!](i win pic)
-- If you tie, a text will be displayed with "It is a tie!", and a yellow background will be highlighted. [You tie!](i win pic)
+- If you win, a text will display with "You win!", and a green background will be highlighted.
+- If you lose, a text will display with "Computer wins!", and a red background will be highlighted.
+- If you tie, a text will be displayed with "It is a tie!", and a yellow background will be highlighted.
+
+![You win!](readme-assets/you-win.png)
+
+![It is a tie!](readme-assets/its-a-tie.png)
+
+![Computer wins!](readme-assets/computer-wins.png)
 
 ### Scoreboard
 - The scoreboard are located almost all the way down to the page. This will keep track of your winnings, losses and how many ties you have made versus the computer.
-- If you want to reset the scoreboard, just refresh the website. [Scoreboard](scoreboard bild)
+- If you want to reset the scoreboard, just refresh the website. 
+
+![Scoreboard](readme-assets/scoreboard.png)
 
 ### Total games played
 - This counter will keep track of how many games you have played.
@@ -120,23 +131,36 @@ You can create a copy of the repository aswell, by use something called forking.
 # Testing
 
 ## Validator Testing 
-The HTML was validated using [W3C HTML Validator]() 
-- CSS showed no errors aswell, and validated with [Jigsaw W3C Validator]()
-- My JavaScript was validated, without errors with [ExtendsClass]()
+The HTML was validated using 
 
+![W3C HTML Validator](readme-assets/html-validator.PNG) 
 
+- My JavaScript was validated, without errors with 
+
+![ExtendsClass](readme-assets/JS-validator.png)
+- CSS showed no errors aswell, and validated with 
+
+![Jigsaw W3C Validator](readme-assets/css-validator.PNG)
 
 ## Lighthouse
 - The google chrome has a very good built-in performance-tool that is called Lighthouse.
 This was used on my website, and i got a performance on 83/100.
-- It showed an error message "form elements do not have associated labels" [FORM ELEMEN ERROR IMG](IMG ON FORM ELEMENT)
-and also a error message "document does not have a meta description" [meta desctiption img](METADES BILD)
+- It showed an error message "form elements do not have associated labels",
+and also a error message "document does not have a meta description" 
+
+![Lighthouse performance](readme-assets/lighthouse-performance83.PNG)
+
+![Error form-element](readme-assets/form-element-error.PNG)
+
+![No meta desctiption](readme-assets/metadescription.PNG)
 
 - I invesitgated my HTML and found out very quick that i forgot to put a label in my code.
 So instead of my <span>, i placed a <label>, and a **for** attribute for every option.
 - Afterwards, i checked the meta description, and found out i forgot to add the keywords and a description on top of my HTML file [index.html].
 
-- I ran the lighthouse again, and got a much better result. The game was validated to a 100/100 score in Accessibillity. [lightouse fixed img!()]
+- I ran the lighthouse again, and got a much better result. The game was validated to a 100/100 score in Accessibillity. 
+
+![Lighthouse fixed accessibility](readme-assets/performance-fixed.png)
 
 ## Responsiveness
 - The game was tested, and worked perfect in two different browesers. Google Chrome, and Safari.
