@@ -1,7 +1,7 @@
 # Rock Paper Scissors
 
 This is a very simple website where you can play the classic Rock, Paper, Scissors game, built with HTML, CSS and JavaScript. You play against the computer. The winner is determined by the classic game-rules.
-Try it yourselves here! [  NAMN OCH LÄNK TILL MIN HEMSIDA!!!]
+Try it yourselves here! [ Rock, Paper, Scissor Game!](LÄNK TILL HEMSIDA)
 
 ![Am i Responsive] LÄNK till bild i readme img
 
@@ -40,6 +40,8 @@ You can use it to structure up what you should do next for an example. A wirefra
 ![Wireframe]( BILD!!)
 
 ## Color choice
+I chose to make the colors very and basic. The game is an old and simple game, so it does not require alot of effects, and colors to make it fun to play.
+#2596be
 
 ## Structure of the site
 
@@ -68,9 +70,31 @@ You can create a copy of the repository aswell, by use something called forking.
 # Testing
 
 ## Validator Testing 
+PERFORMANCE was on 83. to solve this i checked on lighthouse what needed to get fixed. i got an input said: 
+[FORM ELEMEN ERROR IMG]
+[META DESCVRIPTIION IMG]
+- I invesitgated my HTML and found out very quick that i forgot to put a label in my code.
+So instead of my <span>, i placed a <label>, and a **for** attribute for every option.
+
+- Afterwards, i checked the meta description, and added some keywords and a description on top of my page.
+
+i ran the lighthouse again, and got a better result. [lightouse fixed img!()]
+
 
 # Credits
 ### Content
-*
-*
-*
+* My game-layout was inspired by [freeCodeCamp](https://www.youtube.com/watch?v=jaVNP3nIAv0), and 
+[Code with random](https://www.codewithrandom.com/2023/02/17/rock-paper-scissors-game-javascript-rock-paper-scissors-game-html-css/)
+* Score-table is inspired by [Slider Revolution](https://www.sliderrevolution.com/resources/css-tables/)
+* [W3C Validator](https://validator.w3.org/) for checking validation for HTML
+* [Jigsaw W3C Validator](https://jigsaw.w3.org/css-validator/) for checking validation for CSS
+* [ExtendsClass](https://extendsclass.com/javascript-fiddle.html) to validate my JavaScript
+* The font is from [Google Fonts](https://fonts.google.com/)
+* The wireframe is designed & created in [Miro](https://miro.com/)
+
+* Wave webaim was used to check the content to users with disabilities. [Wave Webaim](https://wave.webaim.org/)
+* Google Lighthouse was used in Google Chrome developertools to check the performance of the whole website.
+
+
+### Media
+* My images are borrowed from [Adobe Stock](https://stock.adobe.com/)

@@ -14,20 +14,20 @@ function welcomeAlert() {
   }
 }
 
-let submit = document.getElementById("btnSubmit")
-submit.addEventListener("click", submitAnswer)
+let submit = document.getElementById("btnSubmit");
+submit.addEventListener("click", submitAnswer);
 
 // Game //
 function submitAnswer() {
   const choice = document.querySelector("input[name='choice']:checked");
 
-  const paperRadio = document.getElementById("paper")
-  const rockRadio = document.getElementById("rock")
-  const scissorsRadio = document.getElementById("scissors")
-  const errorMsg = document.getElementById("error")
+  const paperRadio = document.getElementById("paper");
+  const rockRadio = document.getElementById("rock");
+  const scissorsRadio = document.getElementById("scissors");
+  const errorMsg = document.getElementById("error");
 
   if (!rockRadio.checked && !paperRadio.checked && !scissorsRadio.checked) {
-    errorMsg.innerHTML = "You need to make a choise!"
+    errorMsg.innerHTML = "You need to make a choise!";
   } else {
     errorMsg.classList.add("removetext");
   }
@@ -35,7 +35,7 @@ function submitAnswer() {
   if (choice) {
     let playerchoice = choice.value;
     let computerNumber = Math.floor(Math.random() * choices.length);
-    let computerChoice = choices[computerNumber]
+    let computerChoice = choices[computerNumber];
 
     document.getElementById("player-choice").textContent = playerchoice;
 
@@ -58,7 +58,7 @@ function submitAnswer() {
     }
 
     let winner = checkWinner(computerChoice, playerchoice);
-    updateScores(winner)
+    updateScores(winner);
   }
 }
 
@@ -71,7 +71,7 @@ function checkWinner(compChoice, playerchoice) {
     compChoice == "Scissors" && playerchoice == "Paper" ||
     compChoice == "Paper" && playerchoice == "Rock") {
 
-    result = "computer"
+    result = "computer";
   } else {
     result = "player";
   }
@@ -83,14 +83,13 @@ function checkWinner(compChoice, playerchoice) {
 function updateScores(result) {
   const playerScore = document.getElementById("player-score");
   const computerScore = document.getElementById("computer-score");
-  const drawScore = document.getElementById("draw-score")
+  const drawScore = document.getElementById("draw-score");
   const total = document.getElementById("total");
 
   let newScore;
   totalPlayed++;
 
   total.textContent = totalPlayed;
-
 
   if (result === "draw") {
     newScore = parseInt(drawScore.textContent) + 1;
