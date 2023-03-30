@@ -24,17 +24,17 @@ function submitAnswer() {
   const choice = document.querySelector("input[name='choice']:checked");
   console.log(choice)
   if (choice) {
-    let playerChoice = choice.value;
+    let playerchoice = choice.value;
     let computerNumber = Math.floor(Math.random() * choices.length);
     let computerChoice = choices[computerNumber]
 
-    document.getElementById("player-choice").textContent = playerChoice;
+    document.getElementById("player-choice").textContent = playerchoice;
 
     document.querySelectorAll(".computer-choice").forEach(element => {
       element.textContent = computerChoice;
     });
 
-    switch (playerChoice) {
+    switch (playerchoice) {
       case "Rock":
         rock++;
         break;
@@ -48,20 +48,20 @@ function submitAnswer() {
         break;
     }
 
-    let winner = checkWinner(computerChoice, playerChoice);
+    let winner = checkWinner(computerChoice, playerchoice);
     updateScores(winner)
   }
 }
 
 // game-result //
 
-function checkWinner(compChoice, playerChoice) {
+function checkWinner(compChoice, playerchoice) {
   let result;
-  if (compChoice === playerChoice) {
+  if (compChoice === playerchoice) {
     result = "draw";
-  } else if (compChoice == "Rock" && playerChoice == "Scissors" ||
-    compChoice == "Scissors" && playerChoice == "Paper" ||
-    compChoice == "Paper" && playerChoice == "Rock") {
+  } else if (compChoice == "Rock" && playerchoice == "Scissors" ||
+    compChoice == "Scissors" && playerchoice == "Paper" ||
+    compChoice == "Paper" && playerchoice == "Rock") {
 
     result = "computer"
   } else {
