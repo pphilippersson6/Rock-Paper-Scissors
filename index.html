@@ -2,58 +2,64 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- stylesheet and Google Fonts -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+
+    <!-- title -->
     <title>Rock Paper Scissors!</title>
 </head>
 
 <body onload="welcomeAlert();">
-
-
     <div id="game">
+
+        <!-- header -->
         <div class="header">
             <h1 class="heading">Rock, Paper, Scissor Game!</h1>
         </div>
 
-        <img class="logo" src="assets/images/rock-paper-scissor-logo.webp" alt="three hand gestures, Rock, paper and scissors">
-        
+        <!-- logo -->
+        <img class="logo" src="assets/images/rock-paper-scissor-logo.webp"
+            alt="three hand gestures, Rock, paper and scissors">
+
+        <!-- heading -->
         <h2 id="headingName"></h2>
 
-
-
-
+        <!-- game options -->
         <div class="options">
-
-            <!--Options available to player to play game -->
-            <span class="gameOption"> <input type="radio" id="rock" name="choice" value="Rock"> Rock </span>
-            <span class="gameOption"> <input type="radio" id="paper" name="choice" value="Paper"> Paper </span>
-            <span class="gameOption"> <input type="radio" id="scissors" name="choice" value="Scissors"> Scissors </span>
-            <span class="gameButton"> <button id="btnSubmit">Submit Answer</button> </span>
-
+            <span class="gameOption">
+                <input type="radio" id="rock" name="choice" value="Rock"> Rock
+            </span>
+            <span class="gameOption">
+                <input type="radio" id="paper" name="choice" value="Paper"> Paper
+            </span>
+            <span class="gameOption">
+                <input type="radio" id="scissors" name="choice" value="Scissors"> Scissors
+            </span>
+            <span class="gameButton">
+                <button id="btnSubmit">Submit Answer</button>
+            </span>
         </div>
 
-        <!--
-
-        LÄGGA TILL EN GRÖN bakgrund/text eller liknande, när jag vinner
-        och en röd när jag förlorar. gul när det är lika?
-        -->
-
-
+        <!-- player selection -->
         <p class="player-selection"> You Selected: <span id="player-choice"></span> </p>
 
-
+        <!-- computer selection -->
         <p class="computer-selection"> Computer Selected: <span class="computer-choice"></span></p>
 
-
+        <!-- the winner -->
         <h4 id="whoWins">Who's going to win?</h4>
 
-
+        <!-- scoreboard -->
         <div id="wrapper">
             <h4>Scoreboard:</h4>
             <div class="container">
@@ -63,27 +69,31 @@
                             <th>Your wins</th>
                             <th>Ties</th>
                             <th>Computer wins</th>
-
+                        </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td> <span id="player-score">0</span></td>
                             <td><span id="draw-score">0</span></td>
                             <td><span id="computer-score">0</span></td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
 
-            <div class="score-board">
+            <!-- game stats -->
+            <div class="score-board"></div>
 
-            </div>
-
+            <!-- total games played -->
             <div>
                 <span id="totalstats">Total Games Played:</span>
                 <p id="total">0</p>
             </div>
+        </div>
 
-            <script src="/assets/js/script.js"></script>
+        <!-- JavaScript file -->
+        <script src="/assets/js/script.js"></script>
+    </div>
 </body>
 
 </html>
