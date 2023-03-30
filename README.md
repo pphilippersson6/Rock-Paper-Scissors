@@ -47,12 +47,49 @@ This makes it user-friendly and very simple to understand for everyone!
 
 
 ## Structure of the site
+- The site are very simple designed, and has only one page [index](index.html), where the game are located.
+- This site contains a game for you to play, and a scoreboard to keep track of the leader.
 
 # Features
+ - The site is very user-friendly, and everyone can use it.
 
 ## Exsisting features
 
+### Alert message - What's your name?
+- When you enter the website, you will get an alert message, that welcomes you with a text "Welcome to Rock, Paper, Scissors. What's your name?"
+[Alert-Message](LÄGGA TILL BILD)
+
+### Welcome message
+- Right below the header, and the logotype, another message have appeared. It says "WELCOME!" by default.
+But when you enter your name (Philip) in the box - the message will change from "WELCOME!" [WELCOME!](BILD PÅ WELCOME) to "WELCOME PHILIP, CHOOSE YOUR MOVE!" [Welcome name](BILD PÅ WELCOME EFTER NAMNINPUT)
+
+### Rock, Paper or Scissors options
+- Here are three inputs, to make your move against the computer. You select the desired move, and then you use the **Submit Answer** button.
+This will "lock" in your answer, and generate a answer for the computer aswell. [Rock Paper Scissors](BILD PÅ INPUTSE OCH KNAPP)
+
+### Selections
+- The game will show you what input you chose, and also what the computer selected.
+- The computers choice are randomized, and will create a random option between rock, paper or scissors every time you press the **Submit Answer** button!
+[My and computer selection](bild på you och computer selected)
+
+### Result
+- The result are shown below. 
+- If you win, a text will display with "You win!", and a green background will be highlighted. [You win!](i win pic)
+- If you lose, a text will display with "Computer wins!", and a red background will be highlighted. [You lose!](i win pic)
+- If you tie, a text will be displayed with "It is a tie!", and a yellow background will be highlighted. [You tie!](i win pic)
+
+### Scoreboard
+- The scoreboard are located almost all the way down to the page. This will keep track of your winnings, losses and how many ties you have made versus the computer.
+- If you want to reset the scoreboard, just refresh the website. [Scoreboard](scoreboard bild)
+
+### Total games played
+- This counter will keep track of how many games you have played.
+- Just like the scoreboard, this counter will reset if you refresh the website.
+
 ## Features to implement in the future
+
+### Spinning wheel
+- I want to implement a spinning wheel, or something like that, to make the game more interesting, or exciting. This will be more attractive for the user, and will build a longer play-time. 
 
 # Deployment
 
@@ -73,15 +110,18 @@ You can create a copy of the repository aswell, by use something called forking.
 # Testing
 
 ## Validator Testing 
-PERFORMANCE was on 83. to solve this i checked on lighthouse what needed to get fixed. i got an input said: 
-[FORM ELEMEN ERROR IMG]
-[META DESCVRIPTIION IMG]
+
+## Lighthouse
+- The google chrome has a very good built-in performance-tool that is called Lighthouse.
+This was used on my website, and i got a performance on 83/100.
+- It showed an error message "form elements do not have associated labels" [FORM ELEMEN ERROR IMG](IMG ON FORM ELEMENT)
+and also a error message "document does not have a meta description" [meta desctiption img](METADES BILD)
+
 - I invesitgated my HTML and found out very quick that i forgot to put a label in my code.
 So instead of my <span>, i placed a <label>, and a **for** attribute for every option.
+- Afterwards, i checked the meta description, and found out i forgot to add the keywords and a description on top of my HTML file [index.html].
 
-- Afterwards, i checked the meta description, and added some keywords and a description on top of my page.
-
-i ran the lighthouse again, and got a better result. [lightouse fixed img!()]
+- I ran the lighthouse again, and got a better result. [lightouse fixed img!()]
 
 
 # Credits

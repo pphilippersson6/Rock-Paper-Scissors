@@ -1,4 +1,4 @@
-*{
+* {
   margin: 1px;
   padding: 3px;
   box-sizing: border-box;
@@ -27,7 +27,8 @@ body {
   align-items: center;
 }
 
-.logo, .heading {
+.logo,
+.heading {
   display: inline-block;
   vertical-align: middle;
 
@@ -46,16 +47,28 @@ body {
   margin-bottom: 10px;
   color: #333;
 }
+
 h2 {
   font-family: 'Amatic SC', cursive;
   font-size: 40px;
 }
 
 /* Game options and submit-button */
+.options {
+  display: flex;
+  justify-content: center;
+}
+
+.options>div {
+  display: flex;
+  flex-direction: column;
+}
+
 .gameOption {
   margin-right: 20px;
   font-size: 18px;
 }
+
 /*Error message */
 .error {
   color: red;
@@ -63,11 +76,13 @@ h2 {
 }
 
 .removetext {
-  display:none
+  display: none
 }
 
 .gameButton {
   margin-top: 10px;
+  background-color: #66d394;
+  font-weight: bold;
 }
 
 /* Game resuls */
@@ -86,9 +101,10 @@ h2 {
 
 /* Scoreboard */
 h4 {
-font-size: 20px;
+  font-size: 20px;
 
 }
+
 table {
   margin: 20px auto;
   border-collapse: collapse;
@@ -114,9 +130,10 @@ th {
 
 /* Total games played message and counter */
 #totalstats {
-font-size: 25px;
+  font-size: 25px;
 
 }
+
 #total {
   margin-top: 10px;
   font-size: 25px;
@@ -130,11 +147,10 @@ font-size: 25px;
 
 .you-lose {
   background-color: lightcoral;
- 
+
 }
 
 
 .tie-message {
-  background-color:yellow;
+  background-color: yellow;
 }
-
