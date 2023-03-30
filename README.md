@@ -1,6 +1,7 @@
 # Rock Paper Scissors
 
-This is a very simple website where you can play the classic Rock, Paper, Scissors game, built with HTML, CSS and JavaScript. You play against the computer. The winner is determined by the classic game-rules.
+This is a very simple website where you can play the classic Rock, Paper, Scissors game, built with HTML, CSS and JavaScript. 
+You play against the computer. The winner is determined by the classic game-rules.
 Try it yourselves here! [ Rock, Paper, Scissor Game!](LÄNK TILL HEMSIDA)
 
 ![Am i Responsive] LÄNK till bild i readme img
@@ -25,7 +26,6 @@ If you lose against the computer, the text "Computer wins!" appears, and the bac
 The rules of Rock, Paper, Scissors are very simple. 
 
 Check the rules below:
-
 - The rock beats scissors
 - Scissors beats paper
 - Paper beats rock
@@ -37,17 +37,20 @@ Check the rules below:
 - The wireframe for this game/website is designed in [Miro](https://miro.com). The wireframe is a good referencs if you are unsure how to build or design your website. 
 You can use it to structure up what you should do next for an example. A wireframe is recommended to create for every project you begin with.
 
-![Wireframe]( BILD!!)
+![Wireframe](readme-assets/wireframe.png)
 
 ## Color choice
 I chose to make the colors very and basic. The game is an old and simple game, so it does not require alot of effects, and colors to make it fun to play.
-The colors iv'e chosen are a gray-toned color for the background [background-color]()  green for win, red for lose and yellow if you tie a game.
+The colors iv'e chosen are a gray-toned color for the backgroun green for win, red for lose and yellow if you tie a game.
 This makes it user-friendly and very simple to understand for everyone!
 
+![Background-color Win](readme-assets/lightgreen-color-background.PNG)
+![Background-color Tie](readme-assets/yellow-color-background.PNG)
+![Background-color Lose](readme-assets/lightcoral-color-background.PNG)
 
 
 ## Structure of the site
-- The site are very simple designed, and has only one page [index](index.html), where the game are located.
+- The site are very simple designed, and has only one page, the [index](index.html), where the game are located.
 - This site contains a game for you to play, and a scoreboard to keep track of the leader.
 
 # Features
@@ -57,11 +60,18 @@ This makes it user-friendly and very simple to understand for everyone!
 
 ### Alert message - What's your name?
 - When you enter the website, you will get an alert message, that welcomes you with a text "Welcome to Rock, Paper, Scissors. What's your name?"
-[Alert-Message](LÄGGA TILL BILD)
+
+![Alert-Message](readme-assets/alert-message.png)
 
 ### Welcome message
 - Right below the header, and the logotype, another message have appeared. It says "WELCOME!" by default.
-But when you enter your name (Philip) in the box - the message will change from "WELCOME!" [WELCOME!](BILD PÅ WELCOME) to "WELCOME PHILIP, CHOOSE YOUR MOVE!" [Welcome name](BILD PÅ WELCOME EFTER NAMNINPUT)
+But when you enter your name (Philip) in the box - the message will change from "WELCOME!" 
+
+![WELCOME!](readme-assets/welcome-msg.png)
+
+- When you have entered your name, the message will look like this "WELCOME PHILIP, CHOOSE YOUR MOVE!"
+
+![Welcome name](readme-assets/welcome-name.png)
 
 ### Rock, Paper or Scissors options
 - Here are three inputs, to make your move against the computer. You select the desired move, and then you use the **Submit Answer** button.
@@ -110,6 +120,11 @@ You can create a copy of the repository aswell, by use something called forking.
 # Testing
 
 ## Validator Testing 
+The HTML was validated using [W3C HTML Validator]() 
+- CSS showed no errors aswell, and validated with [Jigsaw W3C Validator]()
+- My JavaScript was validated, without errors with [ExtendsClass]()
+
+
 
 ## Lighthouse
 - The google chrome has a very good built-in performance-tool that is called Lighthouse.
@@ -121,8 +136,11 @@ and also a error message "document does not have a meta description" [meta desct
 So instead of my <span>, i placed a <label>, and a **for** attribute for every option.
 - Afterwards, i checked the meta description, and found out i forgot to add the keywords and a description on top of my HTML file [index.html].
 
-- I ran the lighthouse again, and got a better result. [lightouse fixed img!()]
+- I ran the lighthouse again, and got a much better result. The game was validated to a 100/100 score in Accessibillity. [lightouse fixed img!()]
 
+## Responsiveness
+- The game was tested, and worked perfect in two different browesers. Google Chrome, and Safari.
+- The responsiveness was tesded on google dev-tools, and worked good in all "normal" dimensions.
 
 # Credits
 ### Content
