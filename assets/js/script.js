@@ -5,9 +5,7 @@ let rock = 0;
 let paper = 0;
 let scissors = 0;
 
-
-
-// welcome message/alert  //
+// Welcome message/alert  //
 function welcomeAlert() {
   let person = prompt("Welcome to Rock, Paper, Scissors. What's your name?");
   if (person != null) {
@@ -19,7 +17,7 @@ function welcomeAlert() {
 let submit = document.getElementById("btnSubmit")
 submit.addEventListener("click", submitAnswer)
 
-// game //
+// Game //
 function submitAnswer() {
   const choice = document.querySelector("input[name='choice']:checked");
   console.log(choice)
@@ -53,8 +51,7 @@ function submitAnswer() {
   }
 }
 
-// game-result //
-
+// Game-result //
 function checkWinner(compChoice, playerchoice) {
   let result;
   if (compChoice === playerchoice) {
@@ -77,8 +74,6 @@ function updateScores(result) {
   const computerScore = document.getElementById("computer-score");
   const drawScore = document.getElementById("draw-score")
   const total = document.getElementById("total");
-  
-
 
   let newScore;
   totalPlayed++;
@@ -90,7 +85,7 @@ function updateScores(result) {
     newScore = parseInt(drawScore.textContent) + 1;
     drawScore.textContent = newScore;
     message.textContent = "It is a tie!";
-    message.classList.remove("you-win","you-lose");
+    message.classList.remove("you-win", "you-lose");
     message.classList.add("tie-message");
   }
 
@@ -99,8 +94,8 @@ function updateScores(result) {
     computerScore.textContent = newScore;
     message.textContent = "Computer wins!";
     message.classList.add("you-lose");
-    message.classList.remove("you-win","tie-message");
-    
+    message.classList.remove("you-win", "tie-message");
+
   }
 
   if (result === "player") {
@@ -108,7 +103,7 @@ function updateScores(result) {
     playerScore.textContent = newScore;
     message.textContent = "You win!";
     message.classList.add("you-win");
-    message.classList.remove("you-lose","tie-message");
+    message.classList.remove("you-lose", "tie-message");
   }
 
 }
