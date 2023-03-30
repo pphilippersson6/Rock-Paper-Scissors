@@ -56,6 +56,15 @@ h2 {
   margin-right: 20px;
   font-size: 18px;
 }
+/*Error message */
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.removetext {
+  display:none
+}
 
 .gameButton {
   margin-top: 10px;

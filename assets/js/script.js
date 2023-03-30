@@ -20,7 +20,18 @@ submit.addEventListener("click", submitAnswer)
 // Game //
 function submitAnswer() {
   const choice = document.querySelector("input[name='choice']:checked");
-  console.log(choice)
+
+  const paperRadio = document.getElementById("paper")
+  const rockRadio = document.getElementById("rock")
+  const scissorsRadio = document.getElementById("scissors")
+  const errorMsg = document.getElementById("error")
+
+  if (!rockRadio.checked && !paperRadio.checked && !scissorsRadio.checked) {
+    errorMsg.innerHTML = "You need to make a choise!"
+  } else {
+    errorMsg.classList.add("removetext");
+  }
+
   if (choice) {
     let playerchoice = choice.value;
     let computerNumber = Math.floor(Math.random() * choices.length);
@@ -87,6 +98,7 @@ function updateScores(result) {
     message.textContent = "It is a tie!";
     message.classList.remove("you-win", "you-lose");
     message.classList.add("tie-message");
+
   }
 
   if (result === "computer") {
