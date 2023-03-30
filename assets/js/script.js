@@ -14,9 +14,8 @@ function welcomeAlert() {
   }
 }
 
-window.addEventListener('DOMContentLoaded', (event) => {
-  welcomeAlert();
-});
+window.addEventListener('DOMContentLoaded', welcomeAlert);
+
 
 let submit = document.getElementById("btnSubmit");
 submit.addEventListener("click", submitAnswer);
