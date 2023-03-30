@@ -91,6 +91,7 @@ function updateScores(result) {
     drawScore.textContent = newScore;
     message.textContent = "It is a tie!";
     message.classList.remove("you-win","you-lose");
+    message.classList.add("tie-message");
   }
 
   if (result === "computer") {
@@ -98,7 +99,7 @@ function updateScores(result) {
     computerScore.textContent = newScore;
     message.textContent = "Computer wins!";
     message.classList.add("you-lose");
-    message.classList.remove("you-win");
+    message.classList.remove("you-win","tie-message");
     
   }
 
@@ -107,7 +108,7 @@ function updateScores(result) {
     playerScore.textContent = newScore;
     message.textContent = "You win!";
     message.classList.add("you-win");
-    message.classList.remove("you-lose");
+    message.classList.remove("you-lose","tie-message");
   }
 
 }

@@ -108,21 +108,17 @@ font-size: 25px;
 
 
 .you-win {
-  color: rgb(0, 0, 0);
   background-color: lightgreen;
 }
 
 .you-lose {
-  font-size: 20px;
-  color: rgb(0, 0, 0);
   background-color: lightcoral;
  
 
 }
 
-/*
+
 .tie-message {
-  color: yellow;
-  background-color: lightyellow;
+  background-color:yellow;
 }
-*/
+
