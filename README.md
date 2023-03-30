@@ -8,7 +8,7 @@ Try it yourselves here! [ Rock, Paper, Scissor Game!](LÄNK TILL HEMSIDA)
 # Usage
 
 ##
-To play the game, you open the `index.html` file in your web browser. You enter your name in the alertbox that comes up on the site. Then the game begins.
+To play the game, you open the [index.html](index.html) file in your web browser. You enter your name in the alertbox that comes up on the site. Then the game begins.
 
 You choose between the three options, **rock**, **paper** or **scissors**. Then, cklick the **Submit answer** button. The computer choses also an option randomly, and then you can see who wins the game.
 
@@ -41,7 +41,10 @@ You can use it to structure up what you should do next for an example. A wirefra
 
 ## Color choice
 I chose to make the colors very and basic. The game is an old and simple game, so it does not require alot of effects, and colors to make it fun to play.
-#2596be
+The colors iv'e chosen are a gray-toned color for the background [background-color]()  green for win, red for lose and yellow if you tie a game.
+This makes it user-friendly and very simple to understand for everyone!
+
+
 
 ## Structure of the site
 
