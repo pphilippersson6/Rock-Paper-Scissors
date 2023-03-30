@@ -2,7 +2,8 @@
 
 This is a very simple website where you can play the classic Rock, Paper, Scissors game, built with HTML, CSS and JavaScript. 
 You play against the computer. The winner is determined by the classic game-rules.
-Try it yourselves here! [ Rock, Paper, Scissor Game!](LÄNK TILL HEMSIDA)
+
+Try it yourselves here! [ Rock, Paper, Scissor Game!](https://pphilippersson6.github.io/Rock-Paper-Scissors/)
 
 ![Am i Responsive](readme-assets/amiresponsive.png)
 
@@ -35,7 +36,8 @@ Check the rules below:
 
 ##
 - The wireframe for this game/website is designed in [Miro](https://miro.com). The wireframe is a good referencs if you are unsure how to build or design your website. 
-You can use it to structure up what you should do next for an example. A wireframe is recommended to create for every project you begin with.
+
+- You can use a wireframe to structure up what you should do next for an example. A wireframe is recommended to create for every project you begin with.
 
 ![Wireframe](readme-assets/wireframe.png)
 
@@ -52,9 +54,9 @@ This makes it user-friendly and very simple to understand for everyone!
 ## Structure of the site
 - The site are very simple designed, and has only one page, the [index](index.html), where the game are located.
 - This site contains a game for you to play, and a scoreboard to keep track of the leader.
+- The site is very user-friendly, and everyone can use it.
 
 # Features
- - The site is very user-friendly, and everyone can use it.
 
 ## Exsisting features
 
@@ -107,6 +109,8 @@ This will "lock" in your answer, and generate a answer for the computer aswell.
 - This counter will keep track of how many games you have played.
 - Just like the scoreboard, this counter will reset if you refresh the website.
 
+![Total games played](readme-assets/total-games.png)
+
 ## Features to implement in the future
 
 ### Spinning wheel
@@ -128,9 +132,9 @@ This project is deployed on Github pages. To deploy something on Github, follow 
 
 ![Github Deploy](readme-assets/deployment-save-deploy.png)
 
-4. After a while, the website will get shown as live, and you will get a link to the desired website. This indicates that everything is done correctly and you can share the link to anyone! This is how the link is supposed to look like when you are finished! (LÄNK TILL PAGES LÄNK) 
+4. After a while, the website will get shown as live, and you will get a link to the desired website. This indicates that everything is done correctly and you can share the link to anyone! This is how the link is supposed to look like when you are finished! [Rock, Paper, Scissors Game!](https://pphilippersson6.github.io/Rock-Paper-Scissors/)
 
-![Github HTML link](readme-assets/github-live-link.pngreadme-assets/github-live-link.png)
+![Github HTML link](readme-assets/github-live-link.png)
 
 ### Fork the repository (Github)
 You can create a copy of the repository aswell, by use something called forking. To fork the content on Github, 
@@ -207,7 +211,7 @@ This was fixed very easy by swapping out the <p> to a <h5>. And the error has be
 * [ExtendsClass](https://extendsclass.com/javascript-fiddle.html) to validate my JavaScript
 * The font is from [Google Fonts](https://fonts.google.com/)
 * The wireframe is designed & created in [Miro](https://miro.com/)
-* Wave webaim was used to check the content to users with disabilities. [Wave Webaim](https://wave.webaim.org/)
+* [Wave Webaim](https://wave.webaim.org/) was used to check the content to users with disabilities. 
 * Google Lighthouse was used in Google Chrome developertools to check the performance of the whole website.
 * Am i Responsive [Am i Responsive](https://ui.dev/amiresponsive)
 
