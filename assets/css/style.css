@@ -1,3 +1,8 @@
+*{
+  margin: 1px;
+  padding: 3px;
+  box-sizing: border-box;
+}
 
 body {
   font-family: Arial, sans-serif;
@@ -6,6 +11,7 @@ body {
   margin-top: 70px;
 }
 
+/* Center position and style the container */
 #game {
   max-width: 650px;
   margin: 0 auto;
@@ -14,6 +20,7 @@ body {
   padding: 20px;
 }
 
+/* logo and heading */
 .header {
   display: flex;
   justify-content: center;
@@ -32,6 +39,7 @@ body {
   margin-bottom: 0px;
 }
 
+/* Google font for the headings*/
 .heading {
   font-family: 'Amatic SC', cursive;
   font-size: 65px;
@@ -43,6 +51,7 @@ h2 {
   font-size: 40px;
 }
 
+/* Game options and submit-button */
 .gameOption {
   margin-right: 20px;
   font-size: 18px;
@@ -52,22 +61,21 @@ h2 {
   margin-top: 10px;
 }
 
-.player-selection {
+/* Game resuls */
+.player-selection,
+.computer-selection {
   margin-top: 30px;
   font-size: 20px;
 }
 
-.computer-selection {
-  margin-top: 20px;
-  font-size: 20px;
-}
-
+/* "Who's going to win?" message */
 #whoWins {
   margin-top: 30px;
   font-size: 24px;
   font-weight: bold;
 }
 
+/* Scoreboard */
 table {
   margin: 20px auto;
   border-collapse: collapse;
@@ -91,6 +99,7 @@ th {
   margin: 0;
 }
 
+/* Total games played message and counter */
 #totalstats {
 font-size: 25px;
 
@@ -101,7 +110,7 @@ font-size: 25px;
   font-weight: bold;
 }
 
-
+/* Winning message, you win/computer win/it's a tie */
 .you-win {
   background-color: lightgreen;
 }
