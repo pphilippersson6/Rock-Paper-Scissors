@@ -1,14 +1,42 @@
 # Rock Paper Scissors
 
-This is a very simple website where you can play the classic Rock, Paper, Scissors game versus a computer. Try it yourselves here! [  NAMN OCH LÄNK TILL MIN HEMSIDA!!!]
+This is a very simple website where you can play the classic Rock, Paper, Scissors game, built with HTML, CSS and JavaScript. You play against the computer. The winner is determined by the classic game-rules.
+Try it yourselves here! [  NAMN OCH LÄNK TILL MIN HEMSIDA!!!]
 
 ![Am i Responsive] LÄNK till bild i readme img
+
+# Usage
+
+##
+To play the game, you open the `index.html` file in your web browser. You enter your name in the alertbox that comes up on the site. Then the game begins.
+
+You choose between the three options, **rock**, **paper** or **scissors**. Then, cklick the **Submit answer** button. The computer choses also an option randomly, and then you can see who wins the game.
+
+The game keeps track of the score for the player, computer and the number of ties, and the statistics are shown below. 
+
+If you win a round, the text "You win!" will appear, and the background is highlighted in green.
+
+If you tie, the text "It is a tie!" appears, and the background is highlighted in yellow.
+
+If you lose against the computer, the text "Computer wins!" appears, and the background is highlighted in red.
+
+## Game Rules
+
+The rules of Rock, Paper, Scissors are very simple. 
+
+Check the rules below:
+
+- The rock beats scissors
+- Scissors beats paper
+- Paper beats rock
+- If you make the same option, then the game is a tie
 
 # User Experience (UX)
 
 ##
-- The wireframe for this game/website is designed in [Miro](https://miro.com). The wireframe is a good fallback if you dont know how to build your website.
-So - you can fall back to the wireframe and look what you should do next.
+- The wireframe for this game/website is designed in [Miro](https://miro.com). The wireframe is a good referencs if you are unsure how to build or design your website. 
+You can use it to structure up what you should do next for an example. A wireframe is recommended to create for every project you begin with.
+
 ![Wireframe]( BILD!!)
 
 ## Color choice
